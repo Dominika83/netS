@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+/* GENERAL: */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+    background: #fff;
+}
+
+body {
+    margin: 0;
+    background: transparent;
+    font-family: 'Mina', sans-serif;
+    width: 100%;
+    max-width: 1920px;
+    overflow-x: hidden;
+}
+
+a:hover, a:focus, a:active {
+    text-decoration: none;
+}
+
+/* NAVIGATION: */
+.navbar {
+    height: 80px;
+    background: #fff;
+    transition: ease 0.45s;
+}
+
+.navbar .navbar-brand {
+    font-weight: 800;
+    color: #8c8c8c;
+    margin-top: -5px;
+    transition: ease 0.45s;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.navbar-nav {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+}
+
+.navbar-collapse .nav-item {
+    padding: 0px 20px 0px 20px;
+    font-size: 0.8em;
+    font-weight: 600;
+    border: 1px solid lightgray;
+}
+
+.navbar-collapse .nav-item a {
+    color: #a5a5a5;
+    transition: ease 0.45s;
+}
+
+.navbar-collapse .nav-item a:hover, .navbar-collapse .nav-item a:focus, .navbar-collapse .nav-item a:active {
+    text-decoration: none;
+    color: #414141;
+}
+
+.navbar .navbar-toggler {
+    top: 12px;
+}
+
+@media (min-width: 992px) {
+    .navbar-collapse .nav-item a {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px transparent;
+        position: relative;
+        overflow: hidden;
+        padding: 10px 5px 10px 5px;
+    }
+
+    .navbar-collapse .nav-item a:hover {
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5%;
+    }
+}
+
+/* SUBNAVIGATION */
+.subnavigation {
+    background-image: linear-gradient(to right, #8356ef, #8356ef, #7b59ec, #1676db, #027bcc);
+}
+
+.subnavigation__col {
+    align-items: center;
+}
+
+.btn-secondary {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn-secondary.active,
+.btn-secondary:active,
+.show > .btn-secondary.dropdown-toggle,
+.btn-secondary:hover {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.subnavigation__search,
+.subnavigation__search input,
+.subnavigation__search button {
+    background: #fff;
+    border: none;
+}
+
+.subnavigation__search button {
+    float: right;
+}
+
+/* BREADCRUMB */
+.breadcrumb {
+    background: transparent;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+}
+
+/* PRODUCT */
+.product__main {
+    border: 0.5px solid #027bcc;
+    -webkit-border-top-left-radius: 15px;
+    -webkit-border-bottom-left-radius: 15px;
+    -moz-border-radius-topleft: 15px;
+    -moz-border-radius-bottomleft: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background: #fff;
+    position: relative;
+    z-index:1;
+}
+
+.product__main:before {
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid #fff;
+    border-left: 30px solid red;
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: -1px;
+    z-index: -1;
+}
+
+.slider-nav img {
+    max-width: 70%;
+}
+
+.product__main_col {
+    padding: 30px;
+}
+
+.slick-prev, .slick-next {
+    background: #8c8c8c;
+}
+
+.product__main_list_left {
+    float: right;
+}
+
+.product__main_list_right {
+    font-weight: 600;
+}
+
+.product_logo {
+    position: absolute;
+    bottom: 0%;
+    right: 5%;
+}
+
+/* DESCRIPTION */
+.description {
+    padding-top: 2%;
+}
+
+.description__col {
+    padding: 0% 5% 0% 5%;
+}
+
+.description__title {
+    text-align: center;
+}
+
+.description__content {
+    text-align: justify;
+}
+
+/* PRE-FOOTER */
+
+/* FOOTER */
+footer {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    padding: 20px 0;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-inner .footer-inner-text {
+    color: #fff;
+    font-size: 0.8em;
+}
+
+footer .footer-inner .footer-inner-text .underline {
+    text-decoration: underline;
+}
+
+footer span {
+    margin: 5px 0;
+}
+
+footer .bspan {
+    font-weight: 600;
+}
