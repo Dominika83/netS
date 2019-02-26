@@ -222,6 +222,17 @@ img {
     border-left: 30px solid #148ad6;
 }
 
+.product__main_layer {
+    background: #fff;
+    background: linear-gradient(135deg, transparent 10px, #fff 0) top left,
+    linear-gradient(225deg, transparent 10px, #fff 0) top right,
+    linear-gradient(315deg, transparent 20px, #fff 0) bottom right,
+    linear-gradient(45deg, transparent 10px, #fff 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    margin: 1% 0.1% 0.0% 1%;
+}
+
 .slider-nav img {
     max-width: 70%;
 }
