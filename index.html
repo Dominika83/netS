@@ -20,28 +20,62 @@
 
 <!--NAVIGATION-->
 <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="index.html"><img src="images/netS.png" alt="netS"></a>
+    <div class="container">
+        <div class="row">
+            <button class="col-sm-1 col-1 navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offset-lg-0 col-lg-8 offset-md-1 col-md-6 offset-sm-2 col-sm-6 offset-1 col-6">
+                <a class="navbar-brand" href="index.html"><img src="images/netS.png" alt="netS"></a>
+            </div>
+            <div class="col-sm-4 col-4 nav_mobile">
+                <div class="nav_mobile__search">
+                    <button type="button"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="nav_mobile__account">
+                    <img src="">
+                    <p>Zaloguj</p>
+                </div>
+                <div class="nav_mobile__basket">
+                    <img src="">
+                    <p>koszyk</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a href="index.html">e-SKLEP</a>
+                <a href="index.html">
+                    <img src="images/ikon_esklep.png">
+                    e-SKLEP
+                </a>
             </li>
             <li class="nav-item">
-                <a href="subpage.html">USLUGI OD NET<span>s</span></a>
+                <a href="subpage.html">
+                    <img src="images/ikon_esklep.png">
+                    USLUGI OD NET<span>s</span>
+                </a>
+            </li>
+            <li class="nav-item nav-item_without_icon">
+                <a href="subpage.html">
+                    POZNAJ NAS
+                </a>
             </li>
             <li class="nav-item">
-                <a href="subpage.html">POZNAJ NAS</a>
+                <a href="subpage.html">
+                    <img src="images/ikon_esklep.png">
+                    B2B
+                </a>
             </li>
             <li class="nav-item">
-                <a href="subpage.html">B2B</a>
-            </li>
-            <li class="nav-item">
-                <a href="subpage.html">KONTAKT</a>
+                <a href="subpage.html">
+                    KONTAKT >
+                    <img src="images/ikon_esklep.png">
+                </a>
             </li>
         </ul>
     </div>
@@ -69,10 +103,12 @@
                 <button type="button"><i class="fa fa-search"></i></button>
             </div>
             <div class="col-md-2 subnavigation__account">
-
+                <img src="">
+                <p>Zaloguj się <br> lub załóż konto</p>
             </div>
             <div class="col-md-2 subnavigation__basket">
-
+                <img src="">
+                <p>Twój koszyk</p>
             </div>
         </div>
     </div>
@@ -94,18 +130,22 @@
     <div class="container">
         <div class="product__main">
             <div class="row">
-                <div class="col-md-12 col-sm-6 col-xs-6">
+                <div class="col-md-12 col-sm-12 col-xs-12">
                     <div class="row product__main_col">
-                        <div class="col-md-8">
-                            <div class="row">
+                        <div class="col-lg-8 col-md-12">
+
+                            <!--TITLE: DESKTOP-->
+                            <div class="row product__main_title">
                                 <div class="col-md-12">
-                                    <h5>Acer Nitro 5 i7-7700HQ/8GB/1000/Win10 GTX1050Ti</h5>
-                                    <p>Lorem ipsum</p>
-                                    <p>Lorem ipsum</p>
+                                    <h4>Acer Nitro 5 i7-7700HQ/8GB/1000/Win10 GTX1050Ti</h4>
+                                    <h4>Lorem ipsum</h4>
+                                    <h4>Lorem ipsum</h4>
                                 </div>
                             </div>
+
+                            <!--SLIDER WITH PRODUCT-->
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-lg-6 col-md-12">
                                     <div class="slider-for">
                                         <div class="item">
                                             <img src="images/laptop.jpg" alt="image" draggable="false"/>
@@ -124,6 +164,7 @@
                                         </div>
                                     </div>
 
+                                    <!--THUMBNAILS only on DESKTOP-->
                                     <div class="slider-nav">
                                         <div class="item">
                                             <img src="images/laptop.jpg" alt="image" draggable="false"/>
@@ -143,7 +184,14 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-6 product__main_list">
+                                <!--TITLE: MOBILE-->
+                                <div class="row product__main_title_rwd">
+                                    <div class="col-md-12">
+                                        <h4>Acer Nitro 5 i7-7700HQ/8GB/1000/Win10 GTX1050Ti</h4>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-12 product__main_list">
                                     <table>
                                         <tr>
                                             <td class="product__main_list_left">Numer katalogowy:</td>
@@ -167,16 +215,47 @@
                                         </tr>
                                     </table>
                                     <div class="product_logo">
-                                        <img src="images/netS.png" alt="netS">
+                                        <img src="images/logo_acer.png" alt="netS">
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-lg-4 col-md-12">
                             <h4>cena 1 699,90 zl</h4>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="product__links">
+            <div class="row">
+                <ul>
+                    <li>
+                        <img src="images/icon_spec.png">
+                    </li>
+                    <li>
+                        <a href="#description">Opis</a>
+                    </li>
+                    <li>
+                        <a href="#specification">Specyfikacja</a>
+                    </li>
+                    <li>
+                        <a href="#warranty">Rozszerz gwarancję</a>
+                    </li>
+                    <li>
+                        <a href=""> Opinie</a>
+                    </li>
+                    <li>
+                        <a href="">Zdjęcia</a>
+                    </li>
+                    <li>
+                        <a href="#similar_products">Produkty podobne</a>
+                    </li>
+                    <li>
+                        <a href="">Inni klienci kupili</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -308,27 +387,27 @@
         <div class="blue_line"></div>
         <div class="row">
             <div class="col-md-2">
-                <img src="images/karta.jpg">
+                <img src="images/karta.png">
                 <p>Super Office i3 3,3Ghz/4GB/ HDMI/350W WiFi USB</p>
                 <p>1 699,90 zł</p>
             </div>
             <div class="col-md-2">
-                <img src="images/karta.jpg">
+                <img src="images/karta.png">
                 <p>Super Office i3 3,3Ghz/4GB/ HDMI/350W WiFi USB</p>
                 <p>1 699,90 zł</p>
             </div>
             <div class="col-md-2">
-                <img src="images/karta.jpg">
+                <img src="images/karta.png">
                 <p>Super Office i3 3,3Ghz/4GB/ HDMI/350W WiFi USB</p>
                 <p>1 699,90 zł</p>
             </div>
             <div class="col-md-2">
-                <img src="images/karta.jpg">
+                <img src="images/karta.png">
                 <p>Super Office i3 3,3Ghz/4GB/ HDMI/350W WiFi USB</p>
                 <p>1 699,90 zł</p>
             </div>
             <div class="col-md-2">
-                <img src="images/karta.jpg">
+                <img src="images/karta.png">
                 <p>Super Office i3 3,3Ghz/4GB/ HDMI/350W WiFi USB</p>
                 <p>1 699,90 zł</p>
             </div>
@@ -340,7 +419,7 @@
 <section class="newsletter">
     <div class="container">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 newsletter__title">
                 <p>Newsletter</p>
             </div>
             <div class="col-md-3">
@@ -358,8 +437,7 @@
     <div class="container">
         <div class="row pre-footer-inner">
             <div class="col-md-2 pre-footer-list">
-                <h4>Informacje o zakupach</h4>
-                <hr>
+                <h5>Informacje o zakupach</h5>
                 <ul class="list-inner">
                     <li class="nav-item"><a href="">Czas realizacji zamówienia</a></li>
                     <li class="nav-item"><a href="">Raty</a></li>
@@ -368,8 +446,7 @@
                 </ul>
             </div>
             <div class="col-md-2 pre-footer-list">
-                <h4>Pomoc i kontakt</h4>
-                <hr>
+                <h5>Pomoc i kontakt</h5>
                 <ul class="list-inner">
                     <li class="nav-item"><a href="">Infolinia</a></li>
                     <li class="nav-item"><a href="">Skype</a></li>
@@ -378,8 +455,7 @@
                 </ul>
             </div>
             <div class="col-md-2 pre-footer-list">
-                <h4>O firmie</h4>
-                <hr>
+                <h5>O firmie</h5>
                 <ul class="list-inner">
                     <li class="nav-item"><a href="">O nas</a></li>
                     <li class="nav-item"><a href="">Nasze gwarancje</a></li>
@@ -388,8 +464,7 @@
                 </ul>
             </div>
             <div class="col-md-2 pre-footer-list">
-                <h4>Prawnie</h4>
-                <hr>
+                <h5>Prawnie</h5>
                 <ul class="list-inner">
                     <li class="nav-item"><a href="">Polityka prywatności</a></li>
                     <li class="nav-item"><a href="">RODO</a></li>
@@ -398,8 +473,7 @@
                 </ul>
             </div>
             <div class="col-md-2 pre-footer-list">
-                <h4>Twoje konto</h4>
-                <hr>
+                <h5>Twoje konto</h5>
                 <ul class="list-inner">
                     <li class="nav-item"><a href="">Twój koszyk</a></li>
                     <li class="nav-item"><a href="">Rejestracja</a></li>
@@ -411,22 +485,22 @@
 
         <div class="row pre-footer-logotypes">
             <div class="col-md-2">
-                <img src="images/logo1">
+                <img src="images/logo1.png">
             </div>
             <div class="col-md-2">
-                <img src="images/logo2">
+                <img src="images/logo2.png">
             </div>
             <div class="col-md-2">
-                <img src="images/logo3">
+                <img src="images/logo3.png">
             </div>
             <div class="col-md-2">
-                <img src="images/logo4">
+                <img src="images/logo4.png">
             </div>
             <div class="col-md-2">
-                <img src="images/logo5">
+                <img src="images/logo5.png">
             </div>
             <div class="col-md-2">
-                <img src="images/logo6">
+                <img src="images/logo6.png">
             </div>
         </div>
     </div>
@@ -452,9 +526,8 @@
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
         integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
-        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
         crossorigin="anonymous"></script>
