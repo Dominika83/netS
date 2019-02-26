@@ -51,7 +51,7 @@ img {
 }
 
 .navbar-nav {
-    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+    box-shadow: 0px 15px 35px -12px rgba(0, 0, 0.6, 0.6);
     border-bottom-left-radius: 20px;
     border-bottom: 2px solid #c1c1c1;
     border-left: 2px solid #c1c1c1;
@@ -78,8 +78,9 @@ img {
     top: 12px;
 }
 
-.nav-item_without_icon a {
-    padding-top: 15px !important;
+.nav-item_contact {
+    margin-top: -2%;
+    margin-bottom: -2%;
 }
 
 .navbar-light .navbar-toggler {
@@ -148,11 +149,25 @@ img {
 .subnavigation__account {
     font-size: 0.8rem;
     color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.subnavigation__account p {
+    align-items: center;
+    display: flex;
 }
 
 .subnavigation__basket {
     font-size: 0.8rem;
     color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.subnavigation__basket p {
+    align-items: center;
+    display: flex;
 }
 
 /* BREADCRUMB */
@@ -170,7 +185,7 @@ img {
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
-    content: ">";
+    content: url("../images/ikonki/_.png");
 }
 
 /* PRODUCT */
