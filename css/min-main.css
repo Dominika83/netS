@@ -81,6 +81,10 @@
     .product__main_title {
         display: none;
     }
+
+    .product_line {
+        border-right: none;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

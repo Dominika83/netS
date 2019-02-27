@@ -1,3 +1,5 @@
+$(document).keyup(function(e){if(e.which==49)alert($(window).width()+20);});
+
 //Slick JS - carousel product
 $('.slider-for').slick({
     slidesToShow: 1,

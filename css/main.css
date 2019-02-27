@@ -29,6 +29,26 @@ img {
     max-width: 100%;
 }
 
+input,
+button {
+    font-family: 'Mina';
+}
+
+/* text gradient */
+@supports (-webkit-background-clip:text) {
+    .text-content {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        background-image: -moz-linear-gradient(left, #8356ef 0%, #8356ef 30%, #7b59ec 60%, #1676db 80%, #027bcc 100%);
+        background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #8356ef), color-stop(100%, #027bcc));
+        background-image: -webkit-linear-gradient(left, #8356ef 0%, #8356ef 30%, #7b59ec 60%, #1676db 80%, #027bcc 100%);
+        background-image: -o-linear-gradient(left, #8356ef 0%, #8356ef 30%, #7b59ec 60%, #1676db 80%, #027bcc 100%);
+        background-image: -ms-linear-gradient(left, #8356ef 0%, #8356ef 30%, #7b59ec 60%, #1676db 80%, #027bcc 100%);
+        background-image: linear-gradient(to right, #8356ef 0%, #8356ef 30%, #7b59ec 60%, #1676db 80%, #027bcc 100%);
+    }
+}
+
 /* NAVIGATION: */
 .navbar {
     height: 80px;
@@ -117,7 +137,9 @@ img {
     text-transform: uppercase;
     padding-top: 4%;
     padding-bottom: 4%;
-    font-size: 0.9rem;
+    font-size: 0.94rem;
+    line-height: 13px;
+    font-family: 'Mina';
 }
 
 .btn-secondary.active,
@@ -230,7 +252,11 @@ img {
     linear-gradient(45deg, transparent 10px, #fff 0) bottom left;
     background-size: 50% 50%;
     background-repeat: no-repeat;
-    margin: 1% 0.1% 0.0% 1%;
+    margin: 1% 0.1% 0.1% 1%;
+}
+
+.product_line {
+    border-right: 2px solid #d8d8d8;
 }
 
 .slider-nav img {
@@ -307,6 +333,16 @@ img {
 
 .product__links ul img {
     width: 80%;
+}
+
+.product__variations {
+    text-align: right;
+}
+
+.product__variations_delivery {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
 }
 
 /* DESCRIPTION */
