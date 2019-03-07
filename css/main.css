@@ -29,6 +29,11 @@ img {
     max-width: 100%;
 }
 
+p {
+    margin-top: 0;
+    margin-bottom: 0rem;
+}
+
 input,
 button {
     font-family: 'Mina';
@@ -99,12 +104,42 @@ button {
 }
 
 .nav-item_contact {
-    margin-top: -2%;
+    margin-top: -0.8%;
     margin-bottom: -2%;
+    border-right: none !important;
 }
 
 .navbar-light .navbar-toggler {
     border-color: transparent;
+}
+
+.navbar-collapse > ul > li ul {
+    visibility: hidden;
+    position: absolute;
+    top: 101%;
+    right: 0%;
+    list-style: none;
+    background: #fff;
+    z-index: 2;
+    padding: 1%;
+    font-size: 0.7rem;
+    width: 165px;
+    line-height: 18px;
+    transition: 0.2s 1s;
+    box-shadow: 0px 15px 35px -12px rgba(0, 0, 0.6, 0.6);
+    border-bottom-left-radius: 20px;
+    border-bottom: 2px solid #c1c1c1;
+    border-left: 2px solid #c1c1c1;
+}
+
+.navbar-collapse > ul > li ul span {
+    font-weight: normal;
+    color: #5F65E8;
+}
+
+.navbar-collapse > ul > li:hover ul {
+    visibility: visible;
+    transition-delay: 0s;
 }
 
 @media (min-width: 992px) {
@@ -267,8 +302,70 @@ button {
     padding: 30px;
 }
 
-.product__main_col h4 {
-    font-weight: bold;
+.product__price {
+    padding-bottom: 25%;
+}
+
+.product__price span {
+    font-size: 2rem;
+}
+
+.product__main_col span {
+    font-weight: 700;
+}
+
+.product__variations_details a {
+    color: #292b2c;
+}
+
+.product__variations_availability {
+    font-size: 1.3rem;
+    line-height: 35px;
+    color: #c5ff00;
+    font-weight: 700;
+}
+
+.product__variations_shipping {
+    font-size: 1.3rem;
+    line-height: 20px;
+    color: #ff7900;
+    font-weight: 700;
+}
+
+.product__variations_basket {
+    background-image: linear-gradient(to right, #8356ef, #8356ef, #7b59ec, #1676db, #027bcc);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 13px;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 4%;
+    border-radius: 3%;
+}
+
+.product__variations_quantity {
+    margin-top: 10%;
+}
+
+.product__variations_quantity span {
+    padding: 2px 5% 0% 5%;
+    border: 1px solid #027bcc;
+    line-height: 40px;
+    border-radius: 10%;
+}
+
+.product__variations_print {
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    margin-top: 5%;
+}
+
+.product__variations_print img {
+    padding-right: 2%;
 }
 
 .slick-prev {
@@ -345,6 +442,17 @@ button {
     display: flex;
     align-items: end;
     justify-content: flex-end;
+}
+
+.product__variations_delivery img {
+    padding-right: 2%;
+}
+
+.product__variations_KGO {
+    font-size: 0.8rem;
+    line-height: 35px;
+    color: #000000;
+    font-weight: 700;
 }
 
 /* DESCRIPTION */
@@ -432,6 +540,10 @@ button {
 }
 
 /* WARRANTY */
+.warranty {
+    margin: 3% auto;
+}
+
 .warranty__title {
     justify-content: center;
 }
@@ -440,7 +552,27 @@ button {
     margin-bottom: 0.5rem;
 }
 
+.warranty__col {
+    text-align: center;
+}
+
+.warranty__col div {
+    text-align: right;
+}
+
+.warranty__col p {
+    font-size: 1.3rem;
+}
+
+.warranty__col p span {
+    text-decoration: line-through;
+}
+
 /* SIMILAR PRODUCTS */
+.similar_products {
+    margin: 5% auto;
+}
+
 .similar_products__title {
     justify-content: center;
 }
@@ -449,42 +581,137 @@ button {
     margin-bottom: 0.5rem;
 }
 
+.similar_products_col {
+    justify-content: space-between;
+}
+
+.similar_products_col div {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.similar_products_col div img {
+    padding: 20% 1%;
+}
+
+.similar_products_col div.active {
+    border: 1px solid #027bcc;
+    font-weight: bold;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.similar_products_col div.active:hover {
+    zoom: 120%;
+}
+
+.similar_products_price {
+    font-size: 1.3rem;
+    padding: 10%;
+}
+
 /* NEWSLETTER */
+.newsletter {
+    background-image: linear-gradient(to right, #8356ef, #8356ef, #7b59ec, #1676db, #027bcc);
+    padding: 2%;
+    color: #fff;
+}
+
+.newsletter__title {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
 .newsletter__title :before {
-    content: "\5d";
+    content: url("../images/ikonki/newsletter.png");
     margin-right: 15px;
     font-size: 1.619em;
     vertical-align: middle;
 }
 
+.newsletter_col {
+    text-align: center;
+    align-items: center;
+}
+
+.newsletter__middle {
+    font-size: 1.1rem;
+    line-height: 18px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.newsletter button {
+    font-size: 1.1rem;
+    line-height: 31px;
+    color: #ffffff;
+    font-weight: 700;
+    background: #4d4d4d;
+    border: none;
+    padding: 2% 5%;
+    text-transform: uppercase;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
 /* PRE-FOOTER */
+.pre-footer {
+    padding-top: 4%;
+    padding-bottom: 3%;
+}
+
+.pre-footer-inner {
+    justify-content: space-evenly;
+}
+
+.pre-footer-inner h5 {
+    color: #8ca1ed;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.pre-footer ul {
+    list-style: none;
+    padding-left: 0px;
+    line-height: 30px;
+}
+
+.pre-footer-inner a {
+    color: #8ca1ed;
+}
+
+.pre-footer-list {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.pre-footer-logotypes {
+    align-items: center;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+
+.pre-footer-logotypes div {
+    text-align: center;
+}
+
+.gray_line {
+    width: 100%;
+    height: 1px;
+    background: #a9a9a9;
+    position: relative;
+}
 
 /* FOOTER */
 footer {
     position: relative;
     z-index: 1;
-    background: #fff;
-    padding: 20px 0;
+    background: #f2f2f2;
+    padding: 50px 0;
 }
 
-.footer-inner {
-    display: flex;
-    justify-content: space-between;
-}
-
-footer .footer-inner .footer-inner-text {
-    color: #fff;
-    font-size: 0.8em;
-}
-
-footer .footer-inner .footer-inner-text .underline {
-    text-decoration: underline;
-}
-
-footer span {
-    margin: 5px 0;
-}
-
-footer .bspan {
-    font-weight: 600;
+footer p {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #000;
 }
