@@ -65,8 +65,17 @@
     .nav_mobile {
         display: flex;
         justify-content: space-around;
-        line-height: 9px;
+        align-items: center;
         margin-top: 3%;
+    }
+
+    .nav_mobile__account img {
+        background: #8ca1ed;
+    }
+
+    .nav_mobile__basket img {
+        background: #8ca1ed;
+        padding: 2%;
     }
 
     .slider-nav {
